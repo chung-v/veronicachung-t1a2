@@ -1,0 +1,212 @@
+:root {
+    --font-colour: #132C49;
+    --hf-colour: #9F9F92;
+    --background-colour: #D3DDC8;
+}
+
+@font-face {
+    font-family: Amulya-Regular;
+    src: url(../fonts/Amulya-Regular.ttf);
+}
+@font-face {
+    font-family: Amulya-Bold;
+    src: url(../fonts/Amulya-Bold.ttf)
+}
+
+/* Applying spacing between the header, main and footer */
+body {
+    margin: 0;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header styling */
+header {
+    font-family: Amulya-Bold;
+    color: var(--font-colour);
+    background-color: var(--hf-colour);
+    height: fit-content;
+    border-radius: 10px;
+    margin: 1rem 1rem;
+    position: sticky; top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--font-colour);
+    padding: 8px;
+}
+
+.logo a img {
+    width: 70px;
+    border-radius: 50%;
+    margin: 1rem 1rem;
+}
+
+.logo-name {
+    font-size: 34px;
+}
+
+nav {
+    margin: 0 1rem;
+    margin-left: auto;
+}
+
+nav a:hover {
+    background-color: var(--background-colour);
+    border-radius: 10px;
+}
+
+/* Main styling */
+main {
+    font-family: Amulya-Regular;
+    background-color: var(--background-colour);
+    height:auto;
+    border-radius: 10px;
+    margin: 1rem 1rem;
+}
+
+/* .main-card {
+    font-family: Amulya-Regular;
+    background-color: var(--background-colour);
+    height: fit-content;
+    border-radius: 10px;
+    margin: 1rem 1rem;
+    position: sticky; top: 4rem;
+} */
+
+/* Footer styling */
+footer {
+    font-family: Amulya-Bold;
+    color: var(--font-colour);
+    background-color: var(--hf-colour);
+    height: fit-content;
+    border-radius: 10px;
+    margin: 1rem 1rem;
+    position: sticky; bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.email, .social-media {
+    margin: 0 1rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-media a i {
+    font-size: 36px;
+    color:var(--font-colour);
+    padding: 1rem;;
+}
+
+/* Media query - Phone view */
+@media screen and (max-width: 767px) {
+    /* Heading is removed due to the limited space on the header */
+    .logo-name {
+        display: none;
+    }
+    /* Logo increases in size to make up the for removed heading */
+    .logo a img {
+        width: 110px;
+    }    
+    /* Nav bar is realigned vertically due to the limited horizontal space */
+    nav {
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+    }
+    /* Footer elements are realigned vertically due to the limited horizontal space */
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+}
+
+/* Media query - Desktop view */
+@media screen and (min-width: 1200px) {
+    /* Header is realigned to the left */
+    header {
+        height: 85dvh;
+        width: 25dvw;
+        margin: 1rem 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: auto;
+    }
+    /* Logo is centred */
+    .logo a img {
+        margin: 2rem 1rem 0rem 1rem;
+    }
+    /* Nav bar text is centred and spaced out*/
+    nav {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: auto 0;
+    }
+    nav a {
+        padding: 16px;
+    }
+    /* Main section is sticky positioned to stay in proportion with the other components */
+    main {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    .main-card {
+        height: 85dvh;
+        width: 70dvw;
+        margin-left: auto;
+        margin: 0;
+        position: sticky; top: 1rem;
+    }
+    /* Footer is sticky positioned to stay in proportion with the other components */
+    footer {
+        height: 10dvh;
+        margin: 1rem 1rem;
+        position: sticky; bottom: 1rem;
+    }
+
+    /* body {
+    display: grid;
+    width: 100dvw;
+    height: 100dvh;
+    margin: 1rem 1rem;
+    grid-template-areas:
+    "head main main"
+    "head main main"
+    "head foot foot";
+    }
+    header {
+        height: 95dvh;
+        margin: 0;
+    }
+    .main-card {
+        height: 85dvh;
+        width: 70dvw;
+        margin: 0;
+        margin-bottom: auto;
+        position: sticky; top: 1rem;
+    }
+    footer {
+        height: 10dvh;
+        width: 70dvw;
+        margin: 0;
+        margin-top: auto;
+        position: sticky; bottom: 1rem;
+    } */
+}

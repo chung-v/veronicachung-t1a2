@@ -1,0 +1,40 @@
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 32px;
+}
+
+article {
+    background-color: var(--hf-colour);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px 0
+}
+
+.project-image {
+    width: 20dvw;
+}
+
+/* Media query - Tablet view */
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .project-image {
+        width: 30dvw;
+    }
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:column;
+        justify-content:stretch
+    }
+}
+
+/* Media query - Tablet view */
+@media screen and (min-width:768px) and (max-width:1199px) {
+}
+
+/* Media query - Phone view */
+@media screen and (max-width:767px) {
+}

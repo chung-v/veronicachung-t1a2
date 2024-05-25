@@ -6,7 +6,7 @@
     <title>Veronica Chung</title>
 
     <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="../styles/contact.css">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
@@ -23,30 +23,41 @@
         </div>
         <nav>
             <a href="../index.html">Home</a>
-            <a href="#">About</a>
+            <a href="./about.html">About</a>
             <a href="./projects.html">Projects</a>
-            <a href="./contact.html">Contact</a>
+            <a href="#">Contact</a>
         </nav>
     </header>
 
     <main>
-        <section class="about-me">
-            <article class="skills">
-                <h1>About Me</h1>
-                <h2>Skills</h2>
-                <ul>Tech Stack</ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-            </article>
-            <article class="experience">
-                <h2>Experience</h2>
-                <p>April 2024 - <br> Coder Academy - Diploma in Web Development</p>
-            </article>            
+        <section class="contact">
+            <h1>Let's Connect!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus itaque vel, error nam repudiandae possimus! Doloribus laudantium, sint, maxime repellat quos quo possimus libero itaque, sunt aliquid iste quisquam officia.</p>
         </section>
-        <section class="resume">
-                <h1>Resume</h1>
-                <a href="../resources/resume.pdf" target="_blank">Download Resume</a>
-        </section>
+        <form>
+            <div class="form-elements">
+                <label>Name:</label>
+                <input type="text" class="form-input">
+            </div>
+            <div class="form-elements">
+                <label>Email:</label>
+                <input type="text" class="form-input">
+            </div>
+            <div class="form-elements">
+                <label>Subject:</label>
+                <input type="text" class="form-input">
+            </div>
+            <div class="form-elements">
+                <label>Message:</label>
+                <textarea 
+                rows="3"
+                class="form-input
+                form-textarea"></textarea>
+            </div>
+            <div class="btn-div">
+                <button id="submit">Send Message</button>
+            </div>
+        </form>
     </main>
 
     <footer>

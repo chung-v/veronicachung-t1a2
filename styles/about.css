@@ -1,0 +1,36 @@
+/* Indentation for headings and paragraphs */
+main h1, h2 {
+    margin: 0;
+    padding: 4rem 4rem 0;
+}
+
+main p, ul {
+    margin: 0;
+    padding: 0 5rem 0;
+}
+
+main li {
+    margin: 0;
+    padding: 0 6rem 0;
+}
+
+/* Styling for resume link */
+.resume a {
+    text-decoration: none;
+    color: var(--font-colour);
+    margin: 0 4.5rem;
+    padding: 0.5rem;
+}
+
+.resume a:hover {
+    background-color: var(--hf-colour);
+    border-radius: 10px;
+}
+
+/* Media query - Tablet view */
+@media screen and (min-width:768px) and (max-width:1199px) {
+}
+
+/* Media query - Phone view */
+@media screen and (max-width:767px) {
+}
