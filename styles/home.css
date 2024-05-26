@@ -1,6 +1,10 @@
-main h1, p {
+.intro {
     margin: 0;
     padding: 4rem 4rem 0;
+}
+
+.intro h1 {
+    margin: 0 0 1rem 0
 }
 
 .photo {
@@ -11,11 +15,8 @@ main h1, p {
     display: block;
 }
 
-/* Media query - Tablet view */
+/* Media query - Tablet and Phone view */
 @media screen and (max-width: 1199px) {
-    .intro h1 {
-        font-size: 4rem;
-    }
     .photo {
         width:30%;
     }
