@@ -1,12 +1,13 @@
+/* Text alignment and spacing */
 .project-intro {
     margin: 0;
     padding: 4rem 4rem 0;
 }
-
 .project-intro h1 {
     margin: 0 0 1rem 0
 }
 
+/* Project cards styling */
 .project {
     padding: 2rem 4rem 0;
     display: flex;
@@ -15,7 +16,6 @@
     align-items: center;
     gap: 1rem;
 }
-
 .project-card {
     background-color: var(--hf-colour);
     border-radius: 10px;
@@ -23,16 +23,9 @@
     overflow: hidden;
     text-align: center;
 }
-
 .project-card a img {
     width: 240px;
 }
-
 .project-name h3, p {
     margin: 0;
-}
-
-/* Media query - Tablet view */
-@media screen and (min-width:768px) and (max-width:1199px) {
-
 }

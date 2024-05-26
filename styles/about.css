@@ -1,27 +1,24 @@
-/* Indentation for headings and paragraphs */
+/* Text alignment and spacing */
 main h1, h2 {
     margin: 0;
     padding: 4rem 4rem 0;
 }
-
 main p, ul {
     margin: 0;
     padding: 0 5rem 0;
 }
-
 main li {
     margin: 0;
     padding: 0 6rem 0;
 }
 
-/* Styling for resume link */
+/* Resume link styling*/
 .resume a {
     text-decoration: none;
     color: var(--font-colour);
     margin: 0 4.5rem;
     padding: 0.5rem;
 }
-
 .resume a:hover {
     background-color: var(--hf-colour);
     border-radius: 10px;
