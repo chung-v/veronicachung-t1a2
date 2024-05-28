@@ -1,28 +1,9 @@
 /* Text alignment and spacing */
-.blog-intro, .blog-post {
-    margin: 0;
-    padding: 4rem 4rem 0;
-}
-.blog-intro h1 {
-    margin: 0 0 1rem 0
+.blog-intro, .blog-post, .blog-img {
+    margin: 0 0 1rem 0;
 }
 
-/* Link to previous page styling */
-.go-back-link {
-    text-decoration: none;
-    color: var(--font-colour);
-    margin: 0;
-    padding: 4rem 4rem 0;
-    display: block;
-}
-
-/* Image styling */
-.blog-post img {
-    width: 400px;
-    border-radius: 10px;
-}
-
-/* Scrolling option to prevent overloading the page with elements */
+/* Scrolling option to allow larger amount of text */
 main {
     overflow: scroll;
 }
@@ -30,12 +11,28 @@ main::-webkit-scrollbar {
     display: none;
 }
 
+/* Link to previous page styling */
+.go-back-link {
+    text-decoration: none;
+    color: var(--font-colour);
+    margin: 0 0 1rem 0;
+    display: block;
+}
+
+/* Image styling */
+.blog-img {
+    padding: 0 0 0 3rem;
+}
+.blog-img img {
+    width: 400px;
+    border-radius: 10px;
+}
+
 /* Media query - Phone view */
 @media screen and (max-width:767px) {
     /* Repositioned and resized image for better visibility */
-    .blog-post img {
+    .blog-img img {
         width: 60dvw;
-        border-radius: 10px;
         margin-left: auto;
         margin-right: auto;
         display: block;

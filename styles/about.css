@@ -1,33 +1,48 @@
 /* Text alignment and spacing */
-main h1, h2 {
-    margin: 0;
-    padding: 4rem 4rem 0;
+.skills, .experience, .resume {
+    margin: 0 0 1rem 0;
 }
-main p, ul {
+.main-text ul {
     margin: 0;
-    padding: 0 5rem 0;
+    padding: 0 0 0 2rem;
 }
-main li {
+.main-text li {
     margin: 0;
-    padding: 0 6rem 0;
+    padding: 0 0 0 3rem;
 }
 
 /* Resume link styling*/
 .resume a {
     text-decoration: none;
     color: var(--font-colour);
-    margin: 0 4.5rem;
-    padding: 0.5rem;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid var(--border-colour);
+    box-shadow: 0 1px 2px var(--border-shadow);
+    margin: 0 0 0 2rem;
+    padding: 0.2rem 0.3rem;
 }
 .resume a:hover {
+    font-family: Amulya-Bold;    
     background-color: var(--hf-colour);
-    border-radius: 10px;
-}
-
-/* Media query - Tablet view */
-@media screen and (min-width:768px) and (max-width:1199px) {
 }
 
 /* Media query - Phone view */
 @media screen and (max-width:767px) {
+    /* Text alignment and spacing are reduced to reduce amount of dead space */
+    .skills, .experience, .resume {
+        margin: 0 0 1rem 0;
+    }
+    .main-text ul {
+        margin: 0;
+        padding: 0 0 0 1rem;
+    }
+    .main-text li {
+        margin: 0;
+        padding: 0 0 0 2rem;
+    }
+    .resume a {
+        margin: 0 0 0 1rem;
+        padding: 0.2rem 0.3rem;
+    }
 }

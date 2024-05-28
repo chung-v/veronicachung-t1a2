@@ -1,25 +1,18 @@
-/* Text alignment and spacing */
-.intro {
-    margin: 0;
-    padding: 4rem 4rem 0;
-}
-.intro h1 {
-    margin: 0 0 1rem 0
-}
-
 /* Photo styling */
 .photo {
     max-width: 400px;
     border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    border: 1px solid var(--border-colour);
+    box-shadow:  0 1px 2px var(--border-shadow);
     display: block;
+    margin: 0 auto 1rem auto;
 }
 
 /* Media query - Phone view */
 @media screen and (max-width:767px) {
     /* Resized photo */
     .photo {
-        width: 60%;
+        width: 50dvw;
+        margin: 0 auto 0.5rem auto;
     }
 }

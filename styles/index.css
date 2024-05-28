@@ -2,7 +2,9 @@
 :root {
     --font-colour: #132C49;
     --hf-colour: #9F9F92;
-    --background-colour: #D3DDC8;
+    --background-colour: #bec7b4;
+    --border-colour: #cbcbcb;
+    --border-shadow:rgba(0,0,0,0.20);
 }
 
 /* Fonts sourced from Fontshare */
@@ -43,6 +45,8 @@ header {
     color: var(--font-colour);
     background-color: var(--hf-colour);
     border-radius: 10px;
+    border: 1px solid var(--border-colour);
+    box-shadow:  0 1px 2px var(--border-shadow);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -58,6 +62,8 @@ header a {
 .logo a img {
     width: 70px;
     border-radius: 50%;
+    border: 1px solid var(--border-colour);
+    box-shadow: 0 1px 2px var(--border-shadow);
     margin: 1rem;
 }
 .logo-name {
@@ -71,6 +77,8 @@ nav {
 nav a:hover {
     background-color: var(--background-colour);
     border-radius: 10px;
+    border: 1px solid var(--border-colour);
+    box-shadow:  0 1px 2px var(--border-shadow);
     margin-top: auto;
 }
 
@@ -80,6 +88,8 @@ footer {
     color: var(--font-colour);
     background-color: var(--hf-colour);
     border-radius: 10px;
+    border: 1px solid var(--border-colour);
+    box-shadow:  0 1px 2px var(--border-shadow);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -89,10 +99,10 @@ footer {
     margin: 1rem;
 }
 .social-media {
-    margin: 1rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 1rem;
 }
 .social-media a i {
     font-size: 36px;
@@ -106,6 +116,8 @@ main {
     color: var(--font-colour);
     background-color: var(--background-colour);
     border-radius: 10px;
+    border: 1px solid var(--border-colour);
+    box-shadow:  0 1px 2px var(--border-shadow);
     }
 main h1 {
     font-family: Amulya-Bold;
@@ -116,9 +128,22 @@ main h2 {
     font-size: 32px;    
 }
 
+/* Text alignment and spacing in main component */
+.main-text {
+    margin: 0;
+    padding: 3rem 3rem 0;
+}
+.main-text h1, h2 {
+    margin: 0 0 1rem 0;
+}
+.main-text p {
+    margin: 0;
+    padding: 0 0 0 2rem;
+}
+
 /* Media query - Tablet view */
 @media screen and (max-width:1199px) {
-    /* CSS Grid is used to reposition header, main and footer to suit mobile devices*/
+    /* CSS Grid is used to reposition header, main and footer to suit mobile devices */
     body {
         display: grid;
         min-height: calc(100dvh - 16px);
@@ -134,6 +159,7 @@ main h2 {
         grid-column: 1 / 5;
         grid-row: 7 / 8;
     }
+    
     /* Scrolling option to cater for smaller mobile sizes */
     main {
         overflow: scroll;
@@ -143,8 +169,9 @@ main h2 {
     main::-webkit-scrollbar {
         display: none;
     }
+    
     /* Header components are repositioned to the top of the page to make it slimmer */
-    header, nav {
+    header {
         position: sticky; top: 1rem;
         display: flex;
         flex-direction: row;
@@ -188,5 +215,24 @@ main h2 {
     }
     .social-media {
         margin: 0;
+    }
+    /* Heading sizes are reduced to contain them in one line */
+    main h1 {
+        font-size: 44px;
+    }
+    main h2 {
+        font-size: 22px;    
+    }
+    /* Text alignment and spacing are reduced to reduce amount of dead space */
+    .main-text {
+        margin: 0;
+        padding: 1rem 1rem 0;
+    }
+    .main-text h1, h2 {
+        margin: 0 0 0.5rem 0;
+    }
+    .main-text p {
+        margin: 0;
+        padding: 0 0 0 1rem;
     }
 }

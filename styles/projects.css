@@ -1,25 +1,18 @@
-/* Text alignment and spacing */
-.project-intro {
-    margin: 0;
-    padding: 4rem 4rem 0;
-}
-.project-intro h1 {
-    margin: 0 0 1rem 0
-}
-
 /* Project cards styling */
 .project {
-    padding: 2rem 4rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    padding: 2rem 4rem 0;
+    gap: 2rem;
 }
 .project-card {
+    width: 240px;
     background-color: var(--hf-colour);
     border-radius: 10px;
-    width: 240px;
+    border: 1px solid var(--border-colour);
+    box-shadow: 0 1px 2px var(--border-shadow);
     overflow: hidden;
     text-align: center;
 }
