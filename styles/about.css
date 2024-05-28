@@ -1,5 +1,5 @@
 /* Text alignment and spacing */
-.skills, .experience, .resume {
+.skills, .education, .resume {
     margin: 0 0 1rem 0;
 }
 .main-text ul {
@@ -23,14 +23,14 @@
     padding: 0.2rem 0.3rem;
 }
 .resume a:hover {
-    font-family: Amulya-Bold;    
+    font-family: Supreme-Bold;    
     background-color: var(--hf-colour);
 }
 
 /* Media query - Phone view */
 @media screen and (max-width:767px) {
-    /* Text alignment and spacing are reduced to reduce amount of dead space */
-    .skills, .experience, .resume {
+    /* Text alignment and spacing in main component are reduced to minimise dead space */
+    .skills, .education, .resume {
         margin: 0 0 1rem 0;
     }
     .main-text ul {

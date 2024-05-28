@@ -11,7 +11,7 @@
     padding: 1rem 0 1rem 1rem;
 }
 .form-input, .form-textarea {
-    font-family: Amulya-Regular;
+    font-family: Supreme-Regular;
     width: 40dvw;
     height: 2rem;
     border-radius: 5px;
@@ -27,7 +27,7 @@
     padding: 2rem 0 1rem calc(1rem + 157px);
 }
 .form-button button{
-    font-family: Amulya-Regular;
+    font-family: Supreme-Regular;
     font-size: 1rem;
     color: var(--font-colour);
     background-color: white;
@@ -37,9 +37,8 @@
     box-shadow: 0 1px 2px var(--border-shadow);
 }
 .form-button button:hover {
-    font-family: Amulya-Bold;    
+    font-family: Supreme-Bold;    
     background-color: var(--hf-colour);
-    margin-top: auto;
 }
 
 /* Link to previous page styling */
@@ -67,5 +66,9 @@
     }
     .form-input, .form-textarea {
         margin: 0 0 0 1rem;
+    }
+    .form-button {
+        margin: 0;
+        padding: 2rem 0 1em 1rem;
     }
 }

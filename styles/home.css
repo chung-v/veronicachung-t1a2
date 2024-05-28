@@ -1,18 +1,66 @@
-/* Photo styling */
-.photo {
-    max-width: 400px;
+/* Text styling, alignment and spacing */
+.main-text p {
+    font-size: 1.9rem;
+    font-style: italic;
+    text-align: center;
+    padding: 5rem 5rem;
+}
+
+/* Photo card styling */
+.photo-card, .photo-front img, .photo-back {
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
-    border: 1px solid var(--border-colour);
-    box-shadow:  0 1px 2px var(--border-shadow);
     display: block;
     margin: 0 auto 1rem auto;
+}
+.photo-front img, .photo-back {
+    border: 1px solid var(--border-colour);
+    box-shadow: 0 1px 2px var(--border-shadow);
+}
+.photo-back {
+    background-color: #e0e0d8;
+    color: var(--font-colour);
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Photo card flip setup and animation */
+.photo-front, .photo-back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+.photo-card-inner {
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.photo-card:hover .photo-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Media query - Tablet view */
+@media screen and (max-width:1199px) {
+    /* Text alignment and spacing in main component are reduced to minimise dead space */
+    .main-text p {
+        padding: 2rem 2rem;
+    }
 }
 
 /* Media query - Phone view */
 @media screen and (max-width:767px) {
-    /* Resized photo */
-    .photo {
-        width: 50dvw;
+    /* Font is reduced to suit phone view */
+    .main-text p {
+        font-size: 1.3rem;
+        font-style: italic;
+        text-align: center;
+    }
+    /* Resized photo card*/
+    .photo-card, .photo-front img, .photo-back {
+        width: 250px;
+        height: 250px;
         margin: 0 auto 0.5rem auto;
     }
 }

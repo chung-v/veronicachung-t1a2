@@ -9,12 +9,12 @@
 
 /* Fonts sourced from Fontshare */
 @font-face {
-    font-family: Amulya-Regular;
-    src: url(../fonts/Amulya-Regular.ttf);
+    font-family: Supreme-Regular;
+    src: url(../fonts/Supreme-Regular.ttf);
 }
 @font-face {
-    font-family: Amulya-Bold;
-    src: url(../fonts/Amulya-Bold.ttf)
+    font-family: Supreme-Bold;
+    src: url(../fonts/Supreme-Bold.ttf)
 }
 
 /* CSS Grid for header, main and footer layout on Desktop view */
@@ -41,7 +41,7 @@ main {
 
 /* Header component styling */
 header {
-    font-family: Amulya-Bold;
+    font-family: Supreme-Bold;
     color: var(--font-colour);
     background-color: var(--hf-colour);
     border-radius: 10px;
@@ -84,7 +84,7 @@ nav a:hover {
 
 /* Footer component styling */
 footer {
-    font-family: Amulya-Bold;
+    font-family: Supreme-Bold;
     color: var(--font-colour);
     background-color: var(--hf-colour);
     border-radius: 10px;
@@ -94,9 +94,14 @@ footer {
     justify-content: flex-end;
     align-items: center;
 }
-.email p {
+.email a {
+    color: var(--font-colour);
+    text-decoration: none;
     padding: 0;
     margin: 1rem;
+}
+.email a:hover {
+    text-decoration: underline;
 }
 .social-media {
     display: flex;
@@ -112,7 +117,7 @@ footer {
 
 /* Universal main component styling */
 main {
-    font-family: Amulya-Regular;
+    font-family: Supreme-Regular;
     color: var(--font-colour);
     background-color: var(--background-colour);
     border-radius: 10px;
@@ -120,11 +125,11 @@ main {
     box-shadow:  0 1px 2px var(--border-shadow);
     }
 main h1 {
-    font-family: Amulya-Bold;
+    font-family: Supreme-Bold;
     font-size: 54px;
 }
 main h2 {
-    font-family: Amulya-Bold;
+    font-family: Supreme-Bold;
     font-size: 32px;    
 }
 
@@ -185,6 +190,9 @@ main h2 {
         font-size: 30px;
         margin-right: auto;
     }
+    nav {
+        flex-direction: row;
+    }
 }
 
 /* Media query - Phone view */
@@ -216,14 +224,14 @@ main h2 {
     .social-media {
         margin: 0;
     }
-    /* Heading sizes are reduced to contain them in one line */
+    /* Heading sizes in main component are reduced to contain them in one line */
     main h1 {
         font-size: 44px;
     }
     main h2 {
         font-size: 22px;    
     }
-    /* Text alignment and spacing are reduced to reduce amount of dead space */
+    /* Text alignment and spacing in main component are reduced to minimise dead space */
     .main-text {
         margin: 0;
         padding: 1rem 1rem 0;
