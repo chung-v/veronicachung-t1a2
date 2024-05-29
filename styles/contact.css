@@ -6,6 +6,7 @@
 
 /* Form elements styling */
 .form-elements label {
+    font-size: 18px;
     display: inline-block;
     width: 150px;
     padding: 1rem 0 1rem 1rem;
@@ -38,7 +39,7 @@
 }
 .form-button button:hover {
     font-family: Supreme-Bold;    
-    background-color: var(--hf-colour);
+    background-color: var(--button-colour);
 }
 
 /* Link to previous page styling */

@@ -1,14 +1,14 @@
 /* Text alignment and spacing */
 .skills, .education, .resume {
-    margin: 0 0 1rem 0;
+    margin: 0 0 2rem 0;
 }
-.main-text ul {
-    margin: 0;
-    padding: 0 0 0 2rem;
+.tech-stack svg {
+    height: 4rem;
+    width: 4rem;
+    padding: 0 2rem; 
 }
-.main-text li {
-    margin: 0;
-    padding: 0 0 0 3rem;
+.education p {
+    padding: 0 2rem;
 }
 
 /* Resume link styling*/
@@ -24,7 +24,7 @@
 }
 .resume a:hover {
     font-family: Supreme-Bold;    
-    background-color: var(--hf-colour);
+    background-color: var(--button-colour);
 }
 
 /* Media query - Phone view */
@@ -33,13 +33,10 @@
     .skills, .education, .resume {
         margin: 0 0 1rem 0;
     }
-    .main-text ul {
-        margin: 0;
-        padding: 0 0 0 1rem;
-    }
-    .main-text li {
-        margin: 0;
-        padding: 0 0 0 2rem;
+    .tech-stack svg {
+        height: 3rem;
+        width: 3rem;
+        padding: 0 1rem; 
     }
     .resume a {
         margin: 0 0 0 1rem;

@@ -1,8 +1,10 @@
 /* Colour palette for website */
 :root {
     --font-colour: #132C49;
-    --hf-colour: #9F9F92;
-    --background-colour: #bec7b4;
+    --hf-colour: #BBC6C8;
+    --background-colour: #E5E3E4;
+    --card-colour: #dadfe0;
+    --button-colour: #d6dadb;
     --border-colour: #cbcbcb;
     --border-shadow:rgba(0,0,0,0.20);
 }
@@ -70,6 +72,7 @@ header a {
     font-size: 34px;
 }
 nav {
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     margin: auto 0;
@@ -85,6 +88,7 @@ nav a:hover {
 /* Footer component styling */
 footer {
     font-family: Supreme-Bold;
+    font-size: 18px;
     color: var(--font-colour);
     background-color: var(--hf-colour);
     border-radius: 10px;
@@ -94,9 +98,12 @@ footer {
     justify-content: flex-end;
     align-items: center;
 }
+.copyright {
+    margin: 0 auto 0 1rem;
+}
 .email a {
-    color: var(--font-colour);
     text-decoration: none;
+    color: var(--font-colour);
     padding: 0;
     margin: 1rem;
 }
@@ -130,7 +137,10 @@ main h1 {
 }
 main h2 {
     font-family: Supreme-Bold;
-    font-size: 32px;    
+    font-size: 32px;
+}
+main p {
+    font-size: 18px;
 }
 
 /* Text alignment and spacing in main component */
@@ -138,12 +148,15 @@ main h2 {
     margin: 0;
     padding: 3rem 3rem 0;
 }
-.main-text h1, h2 {
+.main-text h1 {
     margin: 0 0 1rem 0;
+}
+.main-text h2 {
+    margin: 1rem 0 1rem 0;
 }
 .main-text p {
     margin: 0;
-    padding: 0 0 0 2rem;
+    padding: 0 0 1rem 2rem;
 }
 
 /* Media query - Tablet view */
@@ -207,6 +220,7 @@ main h2 {
     }
     /* Nav bar is realigned vertically due to limited horizontal space */
     nav {
+        font-size: 1rem;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -217,9 +231,13 @@ main h2 {
     }
     /* Footer elements are realigned vertically due to the limited horizontal space */
     footer{
+        font-size: 1rem;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
+    }
+    .copyright {
+        margin: 0;
     }
     .social-media {
         margin: 0;
@@ -230,6 +248,9 @@ main h2 {
     }
     main h2 {
         font-size: 22px;    
+    }
+    main p {
+        font-size: 1rem;
     }
     /* Text alignment and spacing in main component are reduced to minimise dead space */
     .main-text {
