@@ -1,4 +1,4 @@
-/* Text styling, alignment and spacing */
+/* Text styling, alignment and spacing - Different to usual styling to make text stand out*/
 .main-text p {
     font-size: 1.9rem;
     font-style: italic;
@@ -6,7 +6,7 @@
     padding: 5rem 5rem;
 }
 
-/* Photo card styling */
+/* Photo card styling - To ensure elements have consistent size and borders */
 .photo-card, .photo-front img, .photo-back {
     width: 400px;
     height: 400px;
@@ -21,8 +21,8 @@
 .photo-back {
     background-color: var(--card-colour);
     color: var(--font-colour);
-    transform: rotateY(180deg);
-    display: flex;
+    transform: rotateY(180deg); /* Default posisiton is flipped so text is readable after the card flip animation */
+    display: flex; /* To centre the card text */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -30,17 +30,19 @@
 .photo-back h1 {
     text-shadow:
     -1px -1px 0 var(--border-colour),
-     1px -1px 0 var(--border-colour),
+    1px -1px 0 var(--border-colour),
     -1px 1px 0 var(--border-colour),
-     1px 1px 0 var(--border-colour),
+    1px 1px 0 var(--border-colour),
     0 2px 2px var(--border-shadow);
 }
 
-/* Photo card positioning and flip animation */
+/* Photo card positioning - Overlapping front and back cards */
 .photo-front, .photo-back {
     position: absolute;
     backface-visibility: hidden;
 }
+
+/* Photo card flip animation on hover */
 .photo-card-inner {
     transition: transform 1s;
     transform-style: preserve-3d;
@@ -51,7 +53,7 @@
 
 /* Media query - Tablet view */
 @media screen and (max-width:1199px) {
-    /* Text alignment and spacing in main component are reduced to minimise dead space */
+    /* Main component alignment and spacing are reduced to minimise dead space */
     .main-text p {
         padding: 2rem 2rem;
     }
@@ -65,7 +67,7 @@
         font-style: italic;
         text-align: center;
     }
-    /* Resized photo card*/
+    /* Photo card is resized to suit phone view*/
     .photo-card, .photo-front img, .photo-back {
         width: 250px;
         height: 250px;

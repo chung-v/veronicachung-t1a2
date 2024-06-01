@@ -1,24 +1,25 @@
-/* Project cards styling */
+/* Main component spacing - To ensure elements are evenly spaced out */
 .project {
-    display: flex;
+    display: flex; /* Flexbox to centre project cards on all viewports */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 2rem 4rem 0;
     gap: 2rem;
 }
+
+/* Project cards styling - To ensure elements have consistent size and borders */
 .project-card {
     width: 240px;
     background-color: var(--card-colour);
     border-radius: 10px;
     border: 1px solid var(--border-colour);
     box-shadow: 0 1px 2px var(--border-shadow);
-    overflow: hidden;
+    overflow: hidden; /* To crop and hide image that goes past the border */
     text-align: center;
 }
 .project-card a img {
     width: 240px;
-    /* height: 160px; */
 }
 .project-name h3, p {
     margin: 0;

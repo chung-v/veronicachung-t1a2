@@ -1,9 +1,9 @@
-/* Text alignment and spacing */
+/* Main component spacing - To ensure elements are evenly spaced out */
 .blog-intro, .blog-post, .blog-img {
     margin: 0 0 1rem 0;
 }
 
-/* Scrolling option to cater for larger amounts of text */
+/* Scrolling option - To cater for larger amounts of text */
 main {
     overflow: scroll;
 }
@@ -11,7 +11,7 @@ main::-webkit-scrollbar {
     display: none;
 }
 
-/* Link to previous page styling */
+/* Link to previous page styling - For consistency with other text elements */
 .go-back-link {
     text-decoration: none;
     color: var(--font-colour);
@@ -19,7 +19,7 @@ main::-webkit-scrollbar {
     display: block;
 }
 
-/* Image styling */
+/* Image styling and spacing - To ensure it fits on page */
 .blog-img {
     padding: 0 0 0 3rem;
 }
@@ -30,7 +30,7 @@ main::-webkit-scrollbar {
 
 /* Media query - Phone view */
 @media screen and (max-width:767px) {
-    /* Repositioned and resized image for better visibility */
+    /* Image is repositioned and resized for better visibility */
     .blog-img img {
         width: 60dvw;
         margin-left: auto;

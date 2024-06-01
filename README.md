@@ -4,6 +4,7 @@
 This is a portfolio website that showcases information about my myself, skills, knowledge and past projects. It is a reflection of my journey and expertise as a developer and IT specialist.
 
 Portfolio website: https://veronica-chung-t1a2.netlify.app/
+
 GitHub repository: https://github.com/chung-v/veronicachung-t1a2
 
 ### Target Audience

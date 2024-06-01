@@ -1,4 +1,4 @@
-/* Text alignment and spacing */
+/* Main component spacing - To ensure elements are evenly spaced out */
 .contact-form {
     margin: 0;
     padding: 2rem 4rem 0;
@@ -6,7 +6,8 @@
 .main-text .email a {
     margin: 0;
 }
-/* Form elements styling */
+
+/* Form elements styling - To ensure elements have consistent size and borders */
 .form-elements label {
     font-size: 18px;
     display: inline-block;
@@ -29,6 +30,8 @@
     margin: 0;
     padding: 2rem 0 1rem calc(1rem + 157px);
 }
+
+/* Button styling - To show it can be interacted with */
 .form-button button{
     font-family: Supreme-Regular;
     font-size: 1rem;
@@ -39,12 +42,14 @@
     border: 1px solid var(--border-colour);
     box-shadow: 0 1px 2px var(--border-shadow);
 }
+
+/* Button styling on hover - To emphasise it can be interacted with */
 .form-button button:hover {
     font-family: Supreme-Bold;    
     background-color: var(--button-colour);
 }
 
-/* Link to previous page styling */
+/* Link to previous page styling - For consistency with other text elements */
 .go-back-link {
     text-decoration: none;
     color: var(--font-colour);
@@ -55,7 +60,7 @@
 
 /* Media query - Phone view */
 @media screen and (max-width:767px) {
-    /* Repositioned and resized the form input fields for better visibility */
+    /* Form input fields are repositioned and resized for better visibility */
     .form-elements label {
         display:block;
     }

@@ -1,17 +1,21 @@
-/* Text alignment and spacing */
+/* Main component spacing - To ensure elements are evenly spaced out */
 .skills, .education, .resume {
     margin: 0 0 2rem 0;
 }
+
+/* Tech stack icon sizing - To ensure elements have consistent size and borders */
 .tech-stack svg {
     height: 4rem;
     width: 4rem;
     padding: 0 2rem; 
 }
+
+/* For text indentation */
 .education p {
     padding: 0 2rem;
 }
 
-/* Resume link styling*/
+/* Resume link styling - Button style to show link can be interacted with */
 .resume a {
     text-decoration: none;
     color: var(--font-colour);
@@ -19,9 +23,11 @@
     border-radius: 5px;
     border: 1px solid var(--border-colour);
     box-shadow: 0 1px 2px var(--border-shadow);
-    margin: 0 0 0 2rem;
+    margin: 0 0 0 2rem; /* To align it with the other elements on page */
     padding: 0.2rem 0.3rem;
 }
+
+/* Resume link styling on hover - To emphasise link can be interacted with */
 .resume a:hover {
     font-family: Supreme-Bold;    
     background-color: var(--button-colour);
@@ -29,7 +35,7 @@
 
 /* Media query - Phone view */
 @media screen and (max-width:767px) {
-    /* Text alignment and spacing in main component are reduced to minimise dead space */
+    /* Main component alignment and spacing are reduced to minimise dead space */
     .skills, .education, .resume {
         margin: 0 0 1rem 0;
     }
