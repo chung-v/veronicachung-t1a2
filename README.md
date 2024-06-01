@@ -94,21 +94,21 @@ The Home page displays my mission statement. The photo card flips on hover to sh
 The About Me page outlines an introduction of myself, skills and education. The resume link opens my resume (PDF file) in a new tab. It is designed to look like a button, and changes background colour upon hovering. This is to imply it can be interacted with.
 
 Resume link:
-![resume link](./resources/resume-normal.png)
+![resume link](./resources/readme-images/resume-normal.png)
 
 Resume link on hover:
-![resume link on hover](./resources/resume-hover.png)
+![resume link on hover](./resources/readme-images/resume-hover.png)
 
 ### Projects
 The Projects page is an overview of my past works. Clicking a project thumbnail takes the user to a more detailed blog post about the selected project on a new tab.
 
 Project thumbnail:
-![project thumbnail](./resources/project-thumbnail.png)
+![project thumbnail](./resources/readme-images/project-thumbnail.png)
 
 On the blog page, there is a link at the top of the main component to go back to the previous page for convenience.
 
 Link to previous page:
-![previous page link](./resources/previous-page.png)
+![previous page link](./resources/readme-images/previous-page.png)
 
 ### Contact
 The Contact page allows the user to reach out to me through a contact form. This will be useful for any enquiries or collaboration requests. 
@@ -116,13 +116,13 @@ The Contact page allows the user to reach out to me through a contact form. This
 My email is on the main component as an alternative. This allows the user to select their preferred contact method. It is in bold letters and uses a mailto attribute so the user can click to email me directly. When hovering, the email adds an underline to add emphasis.
 
 Email link:
-![email link](./resources/contact-email.png)
+![email link](./resources/readme-images/contact-email.png)
 
 Email link on hover:
-![email link on hover](./resources/contact-email-hover.png)
+![email link on hover](./resources/readme-images/contact-email-hover.png)
 
 Once the form is filled and sent, the user is taken to a new page to indicate that the form was submitted. There is a link to go back to the previous page for convenience.
-![alt text](./resources/contact-submitted.png)
+![alt text](./resources/readme-images/contact-submitted.png)
 
 ## Sources
 
