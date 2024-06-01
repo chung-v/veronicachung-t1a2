@@ -3,7 +3,7 @@
     margin: 0 0 1rem 0;
 }
 
-/* Scrolling option to allow larger amount of text */
+/* Scrolling option to cater for larger amounts of text */
 main {
     overflow: scroll;
 }

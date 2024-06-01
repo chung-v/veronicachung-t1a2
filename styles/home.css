@@ -27,7 +27,6 @@
     align-items: center;
     text-align: center;
 }
-
 .photo-back h1 {
     text-shadow:
     -1px -1px 0 var(--border-colour),
@@ -37,7 +36,7 @@
     0 2px 2px var(--border-shadow);
 }
 
-/* Photo card flip setup and animation */
+/* Photo card positioning and flip animation */
 .photo-front, .photo-back {
     position: absolute;
     backface-visibility: hidden;
