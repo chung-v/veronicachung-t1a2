@@ -49,7 +49,7 @@ header {
     border-radius: 10px;
     border: 1px solid var(--border-colour);
     box-shadow:  0 1px 2px var(--border-shadow);
-    display: flex;
+    display: flex; /* Flexbox used to space out header elements and for easy clicking */
     flex-direction: column;
     justify-content: space-around;
 }
@@ -94,12 +94,12 @@ footer {
     border-radius: 10px;
     border: 1px solid var(--border-colour);
     box-shadow:  0 1px 2px var(--border-shadow);
-    display: flex;
+    display: flex; /* Flexbox used to align footer elements to the right */
     justify-content: flex-end;
     align-items: center;
 }
 .copyright {
-    margin: 0 auto 0 1rem;
+    margin: 0 auto 0 1rem; /* To pull copyright notice to left side of footer and separate from other footer elements */
 }
 .email a {
     text-decoration: none;
@@ -108,10 +108,10 @@ footer {
     margin: 1rem;
 }
 .email a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* To emphasise it can be interacted with */
 }
 .social-media {
-    display: flex;
+    display: flex; /* Flexbox to space out icons */
     justify-content: space-around;
     align-items: center;
     margin: 1rem;
